@@ -1,5 +1,5 @@
 \section{The Internship}
-% add mentions of johan overbeck and help desk guy (if possible) as supervisors
+
 \begin{figure}[H]
     \centering
         \includegraphics[width=0.75\textwidth]{atp-hq.png}
@@ -18,14 +18,18 @@ As the company operates in Denmark, I travelled there and resided near Hillerød
 
 Unfortunately, events on the fifth day were cancelled because of an outbreak of the COVID-19 Delta variant in Hillerød which prompted the closure of a school.\cite{covid_rip}. Indeed, a floorball\footnote[0]{A type of floor hockey with five players and a goalkeeper in each team} game with ATP workers (to which I invited) was scheduled to occur on that date at the school gymnasium.
 
+\newpage    % necessary for text continuity with image
+
 \subsection{Systems Architecture}
 
-On monday, I was given a company laptop and a set of over 20 "system diagrams" to analyse and work on. I learnt that Systems Architects create and make great use of these diagrams in order to visually break down a certain process into its component parts, and that they can be very diverse in scale and contents. They also serve to keep track of a system in its entirety and all its intricacies. 
+On monday, I was given a company laptop and a set of over 20 "system diagrams" to analyse and work on by my supervisor, Johan Overbeck. I learnt that Systems Architects create and make great use of these diagrams in order to visually break down a certain process into its component parts, and that they can be very diverse in scale and contents. They also serve to keep track of a system in its entirety and all its intricacies. 
+
+
 
 \begin{figure}[H]
     \centering
-        \includegraphics[width=1.00\textwidth]{image3.png}
-        \caption*{\textit{Processing diagram for schools and instituions}}
+        \includegraphics[width=\textwidth]{image3.png}
+        \caption*{\textit{Processing diagram for schools and institutions}}
 \end{figure}
 
 The above image is an example of one such diagram that I was instructed to complete while keeping it clear and consistent. It describes the financial processing service that ATP may provide to eduation institutions, which involves a multitude individual modules such as Microsoft Outlook and Skat eKapital, a financial reporting service. Moreover, it describes the interactions between these services. As an example, we can see that data must be manually registered to tinglysning.dk in order for that subsystem to function, as is meant by "manuelt opslag".
@@ -44,14 +48,14 @@ The following day, I was offered the opportunity to be individually briefed by a
     \end{figure}
 
     \item All systems are constrained by the elements above: Business, Economy and IT. I chose to present this relationship as a triangle because all of these concerns are interdependent. To illustrate, a new technology is only viable if it is useful to the business while remaining cost-effective and being practical to implement, so systems architects must take these elements into account and balance them according to the goals set by company leadership. 
-    \item To plan for possible improvement, systems architects must document where and how various technologies are used. Systems used for HR, documentation, finance etc. may consist of technologies like, Oracle Java, SAP ERP, Ruby, SQL (for database management) and much more. Many of these may be in need of replacement or steamlining so as to benefit the Systems Architecture triangle previously mentioned.
+    \item To plan for possible improvement, systems architects must document where and how various technologies are used. Systems used for HR, documentation, finance etc. may consist of technologies like, Oracle Java, SAP ERP, Ruby, SQL (for database management) and much more. Many of these may be in need of replacement or steamlining so as to benefit the Systems Architecture triangle.
 \end{itemize}
 
 % we need more info from later in the notes
 
 \subsection{Gartner Summit}
 
-The Gartner Application Innovation \& Business Solutions summit of 2021 is a series of presentations by industry experts intended to help business take full advantage of modern technologies and frameworks, like agile development and composable business architectures. This year's subject matter was "Building a Resilient Enterprise with Composable, Adaptable Applications". Thanks to ATP, I was able to attend four of these presentations, which have been summarised below.
+The Gartner Application Innovation \& Business Solutions summit of 2021 is a series of presentations by industry experts intended to help business take full advantage of modern technologies and frameworks, like agile development and composable business architectures. This year's subject matter was "Building a Resilient Enterprise with Composable, Adaptable Applications". Thanks to ATP, I was able to attend four of these presentations on wednsday, which have been summarised below.
 
 \begin{enumerate}
     \item \color{dgreen} \textit{Delivering Resilience Through a Composability Fitness Routine}
@@ -62,7 +66,7 @@ The Gartner Application Innovation \& Business Solutions summit of 2021 is a ser
     
     \begin{figure}[H]
         \centering
-            \includegraphics[width=1.00\textwidth]{image4.png}
+            \includegraphics[width=\textwidth]{image4.png}
             \caption*{\textit{Degrees of machine autonomy - Gartner}}
     \end{figure}
 
@@ -73,22 +77,71 @@ The Gartner Application Innovation \& Business Solutions summit of 2021 is a ser
     \color{black} Modernizing the application architecture of an 80-year-old multinational company is a daunting and complex task. Eggplant is ironically a tech company at the forefront of quantum computing and 6G Wireless, so speed was of utmost urgency. The host explained the importance of iteration and automation to transform the underlying application architecture and introduce new ways of working to strengthen the IT-Business relationship, like application diversification.
 
     \item \color{dgreen} Top 5 Priorities for Managing AI Risk Within Gartner’s MOST Framework
-    
+
     \begin{figure}[H]
         \centering
-            \includegraphics[width=0.50\textwidth]{image6.png}
-            \caption*{\textit{The MOST framework - Gartner}}
+        \begin{minipage}[b]{0.49\textwidth}
+          \includegraphics[width=\textwidth]{image6.png}
+          \caption*{Top 5 priorities - Gartner}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[b]{0.49\textwidth}
+          \includegraphics[width=\textwidth]{image1.png}
+          \caption*{MOST solutions - Gartner}
+        \end{minipage}
     \end{figure}
-
+    
     \color{black} The host presented Gartner's MOST framework for Managing AI Risk and a roadmap on the top five priorities within. The MOST covers model operations, security and trustworthiness for AI and adresses the following concerns: What are the various components of an AI risk management program? Who should manage our AI risk management program? What are the top five priorities for AI risk management and what existing tools can help us? In the example of BNP Paribas, a risk reporting and compliance team was formed to address the above concerns and mimise possible negative effects of AI technologies. In fact, by 2024, there will be twice the chance of negative outcomes for companies that don't have those security controls than for those that do. These consequences may include: hiring discrimination because of AI bias, susceptibility to data “poisoning” by bad actors, data and intellectual property theft through inference, and "Black box" scenarios where the actions of a model cannot be explained (e.g. why an interest rate is excessively high or why a loan got denied).
 
     \item \color{dgreen} API Security: How to Protect Your Organization From "Leaky APIs"
+    
+    \begin{figure}[H]
+        \centering
+            \includegraphics[width=\textwidth]{image7.png}
+            \caption*{\textit{Possible API vulnerabilities - Gartner}}
+    \end{figure}
 
     \color{black} APIs are the ubiquitous protocols that allow different technologies to function and interface together. As such, they are required by everything from browsing the internet to enterprise datacentres. However, attacks and data breaches involving poorly secured APIs are increasing in frequency. API protection strategies include the use of API gateways, web application firewalls, access management, as well as specialist API security tools. As well as runtime protection, security should be applied to APIs at design time, including API security testing. This session covered API security best practices.
 \end{enumerate}
 
 \subsection{Hardware Inventory}
 
-%\subsection{other}
+On thursday, I was assigned to the ATP Help Desk and placed under its supervision. My task there was to unpack and inventory over 150 Lenovo ThinkCentre M715q computers and a few office monitors. This was necessary because they were in the process of being discarded, so they were also to be moved out of the storage facilities and organised together.  I registered each computer by its device identifier on an Excel spreadsheet.\cite{pc_excel} This was intended to continue the next day but was unfortunately cancelled as mentionned in \hyperlink{section.2}{section 2}.
 
-\subsection{1+1}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.49\textwidth}
+      \includegraphics[width=\textwidth]{pc.jpg}
+      \caption*{Unpacked computers}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.49\textwidth}
+      \includegraphics[width=\textwidth]{monitor.jpg}
+      \caption*{Unpacked monitors}
+    \end{minipage}
+\end{figure}
+
+This was the first time I had experienced the physically demanding work of moving large amounts of hardware from one dusty place to another, while having to keep track of their identifiers, and I had expected a much more bureaucratic type of labour. The computers themselves were deceptively heavy, and it was difficult to carry more than three at a time. Despite its simplicity, I learned that this kind of work is of utmost importance in most companies, as they tend to rely on it for the successful and efficient deployment of hardware on a large scale. 
+
+On an unrelated note, lunch at the cantine was of very high quality from my experience.
+
+\subsection{Employee Life}
+
+I noted a significant degree of informal and friendly interaction between employees. In fact, one of them even bought cakes to a meeting. In both divisions in which I worked (Systems Architecture and Help Desk), the employees were typically apparent friends with each other and the overall atmosphere was devoid of antagonism. This is further detailed in \hyperlink{subsection.3.1}{subsection 3.1}.
+
+I also participated in a meeting among members of the team in which they discussed how the COVID-19 epidemic and the lockdown it caused affected their work lives and how they could use that to potentially improve their work experience regardless of the epidemic. The following is a non-exhaustive list of the issues they expressed.
+
+\begin{itemize}
+    \item A lack of interaction due to lockdown caused a general lack of collective creativity, due to which they found it difficult to think of innovative projects or ideas.
+    \item The loss of informal interaction between employees removed a source of relaxation from the stress generated by work.
+    \item A feeling of disconnection from the purpose of their work, and thus a severe lack of motivation to start or work on projects.
+\end{itemize}
+
+Despite this, they also listed a number of benefits to the lockdown. They discussed how such advantages could be adapted to improve their working conditions and efficiency outside of lockdown, for example by dedicating a few days per week to working from home so as to save time on commuting. Below are the primary positive effects mentionned during the meeting.
+
+\begin{itemize}
+    \item Improved efficiency when working because of a lack of distractions.
+    \item A reduction of the time wasted on commuting to and from work.
+\end{itemize}
+
+I added that many of the effects that they experienced, especially those pertaining to communication and motivation difficulties, were similar or identical to those I felt as a student during the lockdown. As such, I learned that the difference between school and work life in relation to lockdown is more minimal than I expected.

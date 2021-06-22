@@ -1,5 +1,4 @@
-\documentclass[11pt,a4paper,titlepage]{article} 
-    % use 12pt or \usepackage{setspace} \doublespacing if necessary 
+\documentclass[12pt,a4paper,titlepage]{article} 
 
 %
 % Packages
@@ -32,7 +31,7 @@
     \date{}
 
 %
-% Opening
+% Preface
 %
 \begin{document}
 
@@ -47,13 +46,26 @@
 
 \include{section/the-internship.tex}
 
+\include{section/conclusion.tex}
 
 %
-% References
+% Postface
 %
+\addcontentsline{toc}{section}{Acknowledgements}
+    \section*{Acknowledgements}
+
+I received significant help and guidance during my internship at ATP, which allowed me to gain invaluable knowledge and experience.
+
+I am grateful to all the employees at ATP who were overwhelmingly kind and helpful, especially those at the Systems Architecture and Help Desk teams who helped me learn about their occupations in an interesting and participatory way. 
+
+I would also draw special mention to my supervisor Johan Overbeck, who spent considerable time and effort enabling me to carry out various diverse activities despite several problems.
+
+\newpage
+
 \addcontentsline{toc}{section}{References}
-    \bibliographystyle{unsrt}
-    \flushleft
-        \bibliography{refs}
+
+\bibliographystyle{unsrt}
+\flushleft
+    \bibliography{refs}
 
 \end{document}

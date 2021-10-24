@@ -1,8 +1,7 @@
-\documentclass[12pt,a4paper,titlepage]{article} 
+\documentclass[12pt,a4paper,titlepage]{article}
 
-%
 % Packages
-%
+
 \usepackage{graphicx}
 \usepackage{indentfirst}
 \usepackage{hyperref}
@@ -12,9 +11,8 @@
 \usepackage{xcolor}
 \usepackage[margin=1in]{geometry}
 
-%
 % Document configuration
-%
+
 \graphicspath{ {image/} }
 \hypersetup{
     linktoc=all,
@@ -22,36 +20,33 @@
 }
 \definecolor{dgreen}{rgb}{0.0, 0.5, 0.0}
 
-%
 % Title configuration
-%
+
 \title{\textbf{\Huge{Internship Report}}
     \includegraphics[width=0.60\textwidth]{logo.png}}
     \author{Emil A. Overbeck
-        \thanks{With thanks to ATP and the Systems Architecture and IT support teams}}
+        \thanks{With thanks to ATP and the Systems Architecture and IT support
+        teams}}
     \date{}
 
-%
 % Preface
-%
+
 \begin{document}
 
 \maketitle
 
 \tableofcontents
 
-%
 % Body
-%
+
 \include{section/the-company.tex}
 
 \include{section/the-internship.tex}
 
 \include{section/conclusion.tex}
 
-%
 % Postface
-%
+
 \addcontentsline{toc}{section}{Acknowledgements}
     \section*{Acknowledgements}
 
